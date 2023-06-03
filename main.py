@@ -7,7 +7,7 @@ def removeStartWith(start):
     for contact in contacts:
         name = contact["name"]
         if name.startswith(start):
-            print(str(contact["id"]))
+            print(str(contact["name"]))
             # subprocess.call(["termux-contact-remove", str(contact["id"])])
 
 if __name__ == "__main__":
