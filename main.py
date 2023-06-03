@@ -1,7 +1,7 @@
 import subprocess
 import json
 def removeStartWith(start):
-    contacts_output = subprocess.check_output(["termux-contact-list", "-n", "-j"])
+    contacts_output = subprocess.check_output(["termux-contact-list"])
     contacts = json.loads(contacts_output)
 
     for contact in contacts:
